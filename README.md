@@ -6,11 +6,11 @@
 
 A multirotor study combining external force and torque estimation with two simulated flight controllers. The report also derives the control allocation matrix for a coplanar octocopter and discusses flight near the ground and ceiling.
 
-## My contribution
+## Implementation
 
-- Implemented a momentum-based disturbance estimator for the supplied flight data. Derived the gains from a Butterworth filter and compared estimator orders **1, 3, 5, and 9**.
-- Completed the outer position loop and the inner attitude loop of the supplied geometric control template. The controller computes total thrust and body torques using rotation matrices.
-- Implemented a PD controller with feedforward for the supplied Voliro-style tilting quadrotor template. Used pseudoinverse allocation to convert the requested forces and torques into commands for the four tilting rotors.
+- A momentum-based disturbance estimator was implemented for the supplied flight data. A Butterworth filter was used to derive the gains, and the comparison covered estimator orders **1, 3, 5, and 9**.
+- The supplied geometric control template was completed with an outer position loop and an inner attitude loop. The controller computes total thrust and body torques using rotation matrices.
+- A PD controller with feedforward was implemented for the supplied Voliro-style tilting quadrotor template. Pseudoinverse allocation converts the requested forces and torques into commands for the four tilting rotors.
 
 ## Tools
 
